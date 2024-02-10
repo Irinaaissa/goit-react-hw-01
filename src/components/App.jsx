@@ -1,4 +1,4 @@
-import  userData  from "../userData.json";
+import userData from "../userdata.json"
 import { Profile } from "./Profile/Profile";
 
 
@@ -6,6 +6,7 @@ export const App = () => {
   
   return (
     <>
+    
       <Profile
         name={userData.username}
         tag={userData.tag}

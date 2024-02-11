@@ -7,7 +7,8 @@ const getStatusClass = isOnline =>
     [css.offline]: !isOnline,
   });
 
-export const FriendListItem = ({ avatar, name, isOnline }) => {
+export const FriendListItem = ({ friend }) => {
+    const { avatar, name, isOnline } = friend;
   return (
     <div className={css.item}>
       <img className={css.avatar} src={avatar} alt="Avatar" width="48" />

@@ -1,10 +1,10 @@
 import userData from "../data/userdata.json"
-// import transactions from "../data/transactions.json";
+ import transactions from "../data/transactions.json";
 import friends from "../data/friends.json"
 import { Profile } from "./Profile/Profile";
 // 
  import { FriendList } from "./Friends/FriendList";
-// import { TransactionHistory } from "./Transactions/TransactionHistory";
+import { TransactionHistory } from "./Transactions/TransactionHistory";
 // 
 
 
@@ -21,7 +21,7 @@ export const App = () => {
         stats={userData.stats}
       />
     { <FriendList friends={friends} /> }
-    {/* <TransactionHistory items={transactions} /> */}
+    <TransactionHistory items={transactions} />
     </>
   );
 };
